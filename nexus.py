@@ -6,7 +6,7 @@ import pandas as pd
 
 __author__ = 'jaquinoa'
 
-db_engine = create_engine('mysql+pymysql://root:a123456B@localhost/pydb')
+db_engine = create_engine('mysql+pymysql://user:password@localhost/pydb')
 
 parser = argparse.ArgumentParser(description='Copiar Nexus en Excel a DB')
 parser.add_argument('-e', '--excel', help='Archivo Excel', required=True)
