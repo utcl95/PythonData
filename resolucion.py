@@ -11,7 +11,7 @@ def split_rfecha(rd):
     r = '2018_' + r[-5:]
     return r
 
-db_engine = create_engine('mysql+pymysql://root:a123456B@localhost/pydb')
+db_engine = create_engine('mysql+pymysql://user:password@localhost/pydb')
 
 parser = argparse.ArgumentParser(description='Copiar Resoluciones en Excel a DB')
 parser.add_argument('-e', '--excel', help='Archivo Excel', required=True)
